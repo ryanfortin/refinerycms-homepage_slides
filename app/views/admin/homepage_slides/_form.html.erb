@@ -1,0 +1,39 @@
+<% form_for [:admin, @homepage_slide] do |f| -%>
+  <%= f.error_messages %>
+
+  <div class='field'>
+    <%= f.check_box :enabled -%> <strong>Enabled</strong>
+  </div>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :body -%>
+    <%= f.text_area :body, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+      :f => f,
+      :field => :photo_id,
+      :image => @homepage_slide.photo,
+      :toggle_image_display => false
+    } %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link -%>
+    <%= f.text_field :link -%>
+  </div>
+
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('admin.homepage_slides.homepage_slide.delete')
+              } %>
+<% end -%>

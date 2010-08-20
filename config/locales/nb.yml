@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    homepage_slides:
+      title: Homepage Slides
+  admin:
+    homepage_slides:
+      index:
+        create_new: Lag en ny Homepage Slide
+        reorder: Endre rekkefølgen på Homepage Slides
+        reorder_done: Ferdig å endre rekkefølgen Homepage Slides
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Homepage Slides enda. Klikk på "Lag en ny Homepage Slide" for å legge til din første homepage slide.
+      homepage_slide:
+        view_live: Vis hvordan denne homepage slide ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne homepage slide
+        delete: Fjern denne homepage slide permanent
+  homepage_slides:
+    show:
+      other: Andre Homepage Slides

@@ -1,0 +1,17 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(homepage_slide) -%>">
+  <span style="display:block;float:left;padding:3px;"><%= homepage_slide.enabled ? refinery_icon_tag("bullet_green.png") : refinery_icon_tag("bullet_red.png")%></span>
+  <span class='title'>
+    <%=h homepage_slide.title %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), homepage_slide_url(homepage_slide),
+        :title => t('.view_live'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_homepage_slide_path(homepage_slide),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_homepage_slide_path(homepage_slide),
+        :class => "cancel confirm-delete",
+        :title => t('.delete') %>
+  </span>
+</li>

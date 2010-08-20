@@ -1,0 +1,19 @@
+nl:
+  plugins:
+    homepage_slides:
+      title: Homepage Slides
+  admin:
+    homepage_slides:
+      index:
+        create_new: Maak een nieuwe Homepage Slide
+        reorder: Wijzig de volgorde van de Homepage Slides
+        reorder_done: Klaar met het wijzingen van de volgorde van de Homepage Slides
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Homepage Slides. Druk op 'Maak een nieuwe Homepage Slide' om de eerste aan te maken.
+      homepage_slide:
+        view_live: Bekijk deze homepage slide op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze homepage slide
+        delete: Verwijder deze homepage slide voor eeuwig
+  homepage_slides:
+    show:
+      other: Andere Homepage Slides
